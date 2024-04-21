@@ -1,0 +1,29 @@
+{
+	"name": "triggerEvent",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "eventtrigger",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"fname": "@triggerBody().Filename",
+					"cname": "@triggerBody().ContainerName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/bronze/blobs/dbo.persons",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/5b20eebf-fc79-4039-add2-9e212995b467/resourceGroups/rg-psx/providers/Microsoft.Storage/storageAccounts/adlspsxrajesh",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

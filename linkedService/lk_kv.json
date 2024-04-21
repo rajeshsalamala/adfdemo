@@ -1,0 +1,11 @@
+{
+	"name": "lk_kv",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-psx-rajesh.vault.azure.net/"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adf-psx",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6cf405ff-18a2-4de7-b21d-9e2ce780a192",
+		"tenantId": "c925a6a8-0eaf-4f1f-b6fc-b3e8ff675583"
+	}
+}
