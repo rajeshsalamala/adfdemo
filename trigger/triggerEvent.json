@@ -3,18 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "eventtrigger",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"fname": "@triggerBody().Filename",
-					"cname": "@triggerBody().ContainerName"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/bronze/blobs/dbo.persons",
