@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-psx"
+		},
+		"lk_blob_connectionString": {
+			"value": ""
+		},
+		"lk_sink_adls_accountKey": {
+			"value": ""
+		},
+		"lk_src_sql_connectionString": {
+			"value": "Integrated Security=False;Data Source=localhost,49170;Initial Catalog=rajeshDb;User ID=rajesh"
+		},
+		"lk_kv_properties_typeProperties_baseUrl": {
+			"value": "https://kv-psx-rajesh.vault.azure.net/"
+		},
+		"lk_sink_adls_properties_typeProperties_url": {
+			"value": "https://adlspsxrajesh.dfs.core.windows.net/"
+		},
+		"triggerEvent_properties_typeProperties_scope": {
+			"value": "/subscriptions/5b20eebf-fc79-4039-add2-9e212995b467/resourceGroups/rg-psx/providers/Microsoft.Storage/storageAccounts/adlspsxrajesh"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
