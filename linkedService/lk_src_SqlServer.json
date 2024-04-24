@@ -1,0 +1,22 @@
+{
+	"name": "lk_src_SqlServer",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=localhost,49170;Initial Catalog=practice;User ID=rajesh",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "lk_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql-pwd"
+			}
+		},
+		"connectVia": {
+			"referenceName": "PSX-SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
